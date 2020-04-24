@@ -15,11 +15,6 @@ public class EnderecoService {
     @Traced
     public Endereco getEndereco(String cep) {
         Endereco endereco = enderecoClient.getEndereco(cep);
-        try {
-            Thread.sleep(5000);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
         return endereco;
     }
 }

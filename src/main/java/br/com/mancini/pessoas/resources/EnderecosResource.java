@@ -26,7 +26,7 @@ flows = @OAuthFlows(password = @OAuthFlow(tokenUrl = "http://localhost:8180/auth
 @Tag(name = "enderecos")
 @SecurityRequirement(name = "quarkus-auth")
 @Authenticated
-public class EnderecoResource {
+public class EnderecosResource {
 
 	@Inject
 	EnderecoService enderecoService;
